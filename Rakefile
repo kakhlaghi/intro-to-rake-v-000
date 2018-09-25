@@ -1,4 +1,4 @@
-namespace :db do
+
 
 task :environment do
   require_relative './config/environment'
@@ -10,10 +10,11 @@ task :hello do
   puts "hello from Rake!"
 end
 
+
+
 # in Rakefile
  
-
-
+namespace :db do
 
   desc 'migrate changes to your database'
   task :migrate => :environment do
